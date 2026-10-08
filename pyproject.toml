@@ -1,0 +1,18 @@
+[project]
+name = "strategy-testbench"
+version = "0.1.0"
+description = "A small GTK desktop runner for the Event Backtester project."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+strategy-testbench = "strategy_testbench.app:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["strategy_testbench*"]
+
